@@ -15,16 +15,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: "17" }
-      - uses: android-actions/setup-android@v3
-      - name: Rassembler les fichiers du projet
-        run: |
-          if [ -d nidaa-tv-github ]; then cp -rn nidaa-tv-github/. . ; fi
-          ls -la
       - name: Construire l'APK
         run: |
+          cd nidaa-tv-github
           chmod +x gradlew
           ./gradlew --no-daemon assembleDebug -PnidaaScreenUrl=https://nidaa-ecran.netlify.app
-          cp app/build/outputs/apk/debug/app-debug.apk nidaa-ecran.apk
+          cp app/build/outputs/apk/debug/app-debug.apk ../nidaa-ecran.apk
       - uses: actions/upload-artifact@v4
         with: { name: nidaa-ecran-apk, path: nidaa-ecran.apk }
       - name: Publier dans Releases
