@@ -16,18 +16,21 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: "17" }
       - uses: android-actions/setup-android@v3
+      - name: Rassembler les fichiers du projet
+        run: |
+          if [ -d nidaa-tv-github ]; then cp -rn nidaa-tv-github/. . ; fi
+          ls -la
       - name: Construire l'APK
-        working-directory: nidaa-tv-github
         run: |
           chmod +x gradlew
           ./gradlew --no-daemon assembleDebug -PnidaaScreenUrl=https://nidaa-ecran.netlify.app
           cp app/build/outputs/apk/debug/app-debug.apk nidaa-ecran.apk
       - uses: actions/upload-artifact@v4
-        with: { name: nidaa-ecran-apk, path: nidaa-tv-github/nidaa-ecran.apk }
+        with: { name: nidaa-ecran-apk, path: nidaa-ecran.apk }
       - name: Publier dans Releases
         uses: softprops/action-gh-release@v2
         with:
           tag_name: tv-${{ github.run_number }}
           name: Nidaa Écran APK ${{ github.run_number }}
-          files: nidaa-tv-github/nidaa-ecran.apk
+          files: nidaa-ecran.apk
           body: "Application Android TV Nidaa Écran. Installer l'APK sur la box et l'ouvrir : le code d'appairage s'affiche."
