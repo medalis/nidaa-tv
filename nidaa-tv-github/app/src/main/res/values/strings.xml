@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nidaa</string>
+    <string name="fallback_message">Connexion impossible — nouvelle tentative dans 30 s</string>
+    <string name="fallback_hint">Touche MENU de la télécommande : réglages</string>
+    <string name="logo_description">Logo Nidaa</string>
+
+    <string name="settings_title">Réglages Nidaa</string>
+    <string name="settings_url_label">Adresse de l\'écran</string>
+    <string name="settings_url_hint">https://nidaa-ecran.netlify.app</string>
+    <string name="settings_save_url">Enregistrer l\'adresse</string>
+    <string name="settings_reset_url">Adresse par défaut</string>
+    <string name="settings_reload">Recharger</string>
+    <string name="settings_clear">Vider le cache et dissocier</string>
+    <string name="settings_autostart">Démarrer au boot</string>
+    <string name="settings_quit">Quitter</string>
+    <string name="settings_close">Fermer</string>
+    <string name="settings_version">Nidaa TV %1$s (%2$d) · WebView %3$s · Android %4$s</string>
+    <string name="settings_webview_unknown">inconnue</string>
+    <string name="settings_url_invalid">Adresse invalide : elle doit commencer par https:// (ou http://)</string>
+    <string name="settings_url_saved">Adresse enregistrée</string>
+
+    <string name="clear_confirm_title">Vider le cache et dissocier ?</string>
+    <string name="clear_confirm_message">Toutes les données de l\'écran seront effacées. Il faudra le réassocier à la mosquée avec un nouveau code.</string>
+    <string name="clear_confirm_yes">Effacer</string>
+    <string name="clear_confirm_no">Annuler</string>
+    <string name="clear_done">Données effacées</string>
+</resources>

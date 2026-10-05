@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <!-- Tous les contrôles sont focalisables : navigation complète au D-pad (haut/bas, OK). -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="16dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/settings_url"
+            android:text="@string/settings_url_label"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/settings_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/settings_url_hint"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/settings_save_url"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/settings_save_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nextFocusRight="@+id/settings_reset_url"
+                android:text="@string/settings_save_url" />
+
+            <Button
+                android:id="@+id/settings_reset_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nextFocusLeft="@id/settings_save_url"
+                android:text="@string/settings_reset_url" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/settings_reload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_reload" />
+
+        <Button
+            android:id="@+id/settings_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_clear" />
+
+        <Switch
+            android:id="@+id/settings_autostart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/settings_autostart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/settings_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/settings_quit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nextFocusRight="@+id/settings_close"
+                android:text="@string/settings_quit" />
+
+            <Button
+                android:id="@+id/settings_close"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nextFocusLeft="@id/settings_quit"
+                android:text="@string/settings_close" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

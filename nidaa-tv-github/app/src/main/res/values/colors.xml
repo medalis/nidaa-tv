@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nidaa_night">#0e1529</color>
+    <color name="nidaa_deep">#070b16</color>
+    <color name="nidaa_gold">#d8b46a</color>
+    <color name="nidaa_gold_light">#f1d9a3</color>
+    <color name="nidaa_teal">#49c7b5</color>
+    <color name="nidaa_text">#f2efe6</color>
+    <color name="nidaa_muted">#9aa3b8</color>
+</resources>

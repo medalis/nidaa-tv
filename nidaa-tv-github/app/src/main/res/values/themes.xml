@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nidaa" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/nidaa_deep</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/nidaa_deep</item>
+        <item name="android:navigationBarColor">@color/nidaa_deep</item>
+        <item name="android:colorAccent">@color/nidaa_gold</item>
+    </style>
+
+    <style name="Theme.Nidaa.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
+        <item name="android:colorAccent">@color/nidaa_gold</item>
+        <item name="android:windowMinWidthMajor">60%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

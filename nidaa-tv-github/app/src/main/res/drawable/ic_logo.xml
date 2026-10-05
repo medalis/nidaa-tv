@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo Nidaa : minaret doré, trois arcs turquoise (l'appel) vers la droite. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <group>
+        <path android:fillColor="#d8b46a" android:pathData="M14,58V24h14v34z" />
+        <path android:fillColor="#f1d9a3" android:pathData="M12,24h18l-2,-5H14z" />
+        <path android:fillColor="#f1d9a3" android:pathData="M17,19l4,-9 4,9z" />
+        <path android:fillColor="#f1d9a3" android:pathData="M19,8a2,2 0 1,0 4,0a2,2 0 1,0 -4,0z" />
+        <path android:fillAlpha="0.5" android:fillColor="#0e1529" android:pathData="M18,58V44h6v14z" />
+        <path android:pathData="M36,31a9,9 0 0,1 0,12" android:strokeColor="#49c7b5" android:strokeLineCap="round" android:strokeWidth="3" />
+        <path android:pathData="M41,25a17,17 0 0,1 0,24" android:strokeAlpha="0.7" android:strokeColor="#49c7b5" android:strokeLineCap="round" android:strokeWidth="3" />
+        <path android:pathData="M46,19a25,25 0 0,1 0,36" android:strokeAlpha="0.4" android:strokeColor="#49c7b5" android:strokeLineCap="round" android:strokeWidth="3" />
+    </group>
+</vector>
