@@ -19,7 +19,7 @@ jobs:
         run: |
           cd nidaa-tv-github
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug -PnidaaScreenUrl=https://nidaa-ecran.netlify.app
+          ./gradlew --no-daemon assembleDebug -PnidaaScreenUrl=https://nidaamosquee.med-souldan2.workers.dev
           cp app/build/outputs/apk/debug/app-debug.apk ../nidaa-ecran.apk
       - uses: actions/upload-artifact@v4
         with: { name: nidaa-ecran-apk, path: nidaa-ecran.apk }
