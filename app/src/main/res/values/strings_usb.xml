@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_import_usb">Importer depuis une clé USB</string>
+    <string name="settings_usb_access">Autoriser la lecture automatique des clés USB</string>
+    <string name="usb_pick_hint">Clé USB détectée : choisissez le fichier .nidaa</string>
+    <string name="usb_no_file">Clé USB : aucun fichier .nidaa trouvé à la racine</string>
+    <string name="usb_picker_missing">Sélecteur de fichiers indisponible sur cette box</string>
+    <string name="usb_access_missing">Réglage d\'accès aux fichiers introuvable sur cette box : utilisez « Importer depuis une clé USB »</string>
+    <string name="usb_bad_file">Ce fichier n\'est pas un fichier d\'écran Nidaa</string>
+    <string name="usb_screen_not_ready">L\'écran n\'est pas encore chargé : réessayez dans un instant</string>
+    <string name="usb_screen_old">L\'écran doit d\'abord être mis à jour pour accepter les clés USB</string>
+</resources>
